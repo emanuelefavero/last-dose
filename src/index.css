@@ -1,0 +1,49 @@
+:root {
+    --background-color: rgb(14, 14, 18);
+    --primary-color: rgb(242, 1, 5);
+    --button-border-color: white;
+    --button-color: white;
+    --button-hover-bg-color: rgb(198, 202, 216);
+    --button-hover-color: var(--background-color);
+    --footer-text-color: white;
+}
+
+@font-face {
+    font-family: 'primary-font';
+    src: url(./assets/fonts/DS-DIGIB.TTF);
+}
+
+@font-face {
+    font-family: 'secondary-font';
+    src: url(./assets/fonts/dot_digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'primary-font', -apple-system, 'Helvetica Neue', 'Helvetica',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 24px;
+}
+
+/* TODO:
+/* if hours < 11, set standard color to timer (grey, blue, white, etc...) */
+/* if hours > 11 and < 13, color timer green */
+/* if hours > 13, color timer yellow */
+/* IF HOURS > 15, color timer red */
