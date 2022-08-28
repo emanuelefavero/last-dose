@@ -6,5 +6,7 @@ I built this app to help me and my wife track the insulin intake of "Tago", our 
 
 ### RUN APP:
 
-`npm i`
-`npm start`
+```
+npm i
+npm start
+```
