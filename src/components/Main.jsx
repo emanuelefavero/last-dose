@@ -1,6 +1,7 @@
 import { useContext, useEffect } from 'react'
 import DoseContext from '../context/DoseContext'
 import styles from './Main.module.css'
+import loadingImage from '../assets/images/loading.png'
 import syringeIconWhite from '../assets/images/syringe-icon-white.png'
 import syringeDropIcon from '../assets/images/syringe-drop-icon.png'
 import { useHover } from '../custom-hooks/useHover'
@@ -44,7 +45,13 @@ function Main() {
     const [hoverRef, isHovered] = useHover()
 
     return dose === null ? (
-        <div className={styles.loading}>Loading...</div>
+        <div className={styles.loadingContainer}>
+            <img
+                className={styles.loadingImage}
+                src={loadingImage}
+                alt='loading spinner'
+            />
+        </div>
     ) : (
         <main>
             <div className={styles.clock}>
